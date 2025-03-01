@@ -1,0 +1,24 @@
+1. Balanced Bracket -
+Time Complexity: O(n), where n is the length of the input string.
+We iterate through each character of the string exactly once.
+
+Space Complexity: O(n) in the worst case.
+If the string contains only opening brackets, all of them will be pushed onto the stack.
+This is because the stack size grows proportionally to the number of opening brackets.
+
+2. Decode String -
+Time Complexity: O(n*m), where n is the length of the input string and
+ m is the max number of nested repetitions.
+This is because for each character, we perform constant time operations, but when we encounter ']',
+we might need to repeat a substring a lot of times, which depends on count.
+
+Space Complexity: O(n) for the stacks and the final result.
+This is because The space needed for the stacks is proportional to
+the nesting of brackets.
+
+3. InfixToPostfix
+Time Complexity: O(n), where n is the length of the input.
+This is because we iterate through each character once.
+
+Space Complexity: O(n) in the worst case for the stack.
+In the worst case, all characters might be pushed onto the stack.
